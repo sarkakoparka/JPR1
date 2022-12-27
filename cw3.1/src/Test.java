@@ -1,5 +1,5 @@
-import java.sql.SQLOutput;
 
+// Własne typy danych; posługiwanie się referencjami do obiektów
 public class Test{
     public static void main(String[] args) {
         //nowy obiekt z klasy Date
