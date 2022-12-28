@@ -6,11 +6,11 @@ public class Date {
 
 
         //konstruktor żeby stworzyć później obiekt!
-    public Date(int y, int m, int d)
+    public Date(int year, int month, int day)
     {
-     this.year = y;
-     this.month =m;
-     this.day = d;
+     this.year = year;
+     this.month =month;
+     this.day = day;
     }
 public String getInfo () {
     // return year+"-"+month+"-"+day;

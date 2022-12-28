@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/JPR1.iml" filepath="$PROJECT_DIR$/JPR1.iml" />
+      <module fileurl="file://$PROJECT_DIR$/TravelOffice/TravelOffice.iml" filepath="$PROJECT_DIR$/TravelOffice/TravelOffice.iml" />
       <module fileurl="file://$PROJECT_DIR$/cw1_1/cw1_1.iml" filepath="$PROJECT_DIR$/cw1_1/cw1_1.iml" />
       <module fileurl="file://$PROJECT_DIR$/cw2/cw2.iml" filepath="$PROJECT_DIR$/cw2/cw2.iml" />
       <module fileurl="file://$PROJECT_DIR$/cw3.1/cw3.1.iml" filepath="$PROJECT_DIR$/cw3.1/cw3.1.iml" />
