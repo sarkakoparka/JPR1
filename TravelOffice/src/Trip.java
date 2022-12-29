@@ -1,7 +1,7 @@
 //import java.util.Date;
 
 
-public class Trip {
+public abstract class Trip {
     private String destination;
     private Date start;
    private Date end;
