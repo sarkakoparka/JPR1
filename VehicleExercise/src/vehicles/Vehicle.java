@@ -10,9 +10,7 @@ public abstract class Vehicle {
 
     @Override
     public String toString() {
-        return "vehicles.Vehicle{" +
-                "name='" + name + '\'' +
-                '}';
+        return name;
     }
     // ile paliwa
     public abstract double getFuelNeeds();
@@ -33,9 +31,9 @@ public abstract class Vehicle {
     *
     * */
     public void go() {
-        System.out.println(getClass().getSimpleName()+ ": " + this + "started");
+        System.out.println(getClass().getSimpleName()+ ": " + this + " started");
     }
     public void stop() {
-        System.out.println(getClass().getSimpleName()+ ": " + this + "stopped");
+        System.out.println(getClass().getSimpleName()+ ": " + this + " stopped");
     }
 }
