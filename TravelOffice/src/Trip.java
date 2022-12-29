@@ -2,9 +2,10 @@
 
 
 public class Trip {
-    String destination;
-    Date start;
-    Date end;
+    private String destination;
+    private Date start;
+   private Date end;
+   private int price;
 
 
     public Trip (String destination, Date start, Date end){
@@ -12,7 +13,17 @@ public class Trip {
         this.start=start;
         this.end=end;
     }
-    public String getInfo() {
-        return String.format(" From  %s to %s", start.getInfo(), end.getInfo(), destination);
+
+    public int getPrice() {
+        return price;
+    }
+
+    public void setPrice(int price) {
+        this.price = price;
+    }
+
+    @Override
+    public String toString() {
+        return String.format(" From  %s to %s,%s, price: %d", start, end, destination, getPrice());
     }
 }

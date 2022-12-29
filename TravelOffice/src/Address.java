@@ -1,7 +1,7 @@
 public class Address {
-    String street;
-    String zip;
-    String location;
+    private String street;
+   private String zip;
+   private String location;
 
     //konstruktor
     Address( String street, String zip, String location){
@@ -11,7 +11,8 @@ public class Address {
     }
 
     //konwersja adresu na stringa
-    public String getInfo(){
+    @Override
+    public String toString(){
         return String.format("%s, %s, %s", street, zip, location);
     }
 

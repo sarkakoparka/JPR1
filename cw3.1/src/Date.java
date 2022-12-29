@@ -1,8 +1,8 @@
 public class Date {
     //atrybuty
-    int day;
-    int month;
-    int year;
+    private int day;
+    private int month;
+    private int year;
 
 
         //konstruktor żeby stworzyć później obiekt!
@@ -12,7 +12,7 @@ public class Date {
      this.month =month;
      this.day = day;
     }
-public String getInfo () {
+public String toString() {
     // return year+"-"+month+"-"+day;
     return String.format("%4d-%2d-%2d", this.year, this.month, this.day);
 }

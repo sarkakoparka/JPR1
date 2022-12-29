@@ -1,18 +1,27 @@
 import java.sql.SQLOutput;
 
 public class TravelOffice {
-    public static void main(String[] args) {
-        Date start = new Date(2022, 12, 31);
-        Date powrot = new Date (2023, 1, 17);
+    Customer[] customers = new Customer[2];
+    int customerCount;
 
-        Trip wycieczka = new Trip ("Dominikana", start, powrot);
-        Address adres = new Address("Aleje Ujazdowskie","00-007","Warszawa");
-        Customer klient = new Customer("John Doe");
+    public void addCustomer(Customer customer) {
+        if (customers.length == customerCount) {
+            Customer[] temporaryTab = new Customer[customers.length + 2];
+            System.arraycopy(customers, 0, temporaryTab, 0, customerCount);
+        }
+        customers[customerCount++] = customer;
+    }
 
-        klient.setAddress(adres);
-        klient.assignTrip(wycieczka);
-
-        System.out.println(klient.getInfo());
-
+    public int getCustomerCount() {
+        return customerCount;
+    }
+@Override
+    public String toString() {
+        String report = "";
+        for (int i = 0; i < customerCount; i++) {
+            report += customers[i] + "\n";
+            return report;
+        }
+        return report;
     }
 }

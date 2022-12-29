@@ -1,8 +1,8 @@
 public class Customer {
     //atrybuty
-    String name;
-    Address address;
-    Trip trip;
+    private String name;
+    private Address address;
+    private Trip trip;
 
     //konstruktor
 
@@ -15,7 +15,8 @@ public class Customer {
     public void assignTrip( Trip trip){
         this.trip=trip;
     }
-    public String getInfo() {
-        return String.format(" Name: %s%nAddress: %s%nTrip: %s%n", name, address.getInfo(), trip.getInfo());
+   @Override
+    public String toString() {
+        return String.format(" Name: %s%nAddress: %s%nTrip: %s%n", name, address, trip);
     }
 }
